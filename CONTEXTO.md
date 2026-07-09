@@ -75,15 +75,20 @@ Instagram, com planejamento, produção e publicação de ponta a ponta.
 ## Estrutura de Arquivos
 ```
 agencia/
+├── index.html                        # site na raiz (para deploy Netlify/Pages)
+├── css/styles.css
+├── js/main.js
 ├── CONTEXTO.md                       # este arquivo
 ├── ATUALIZACOES.md                   # changelog de tudo que mudamos
-├── Proposta_Comercial_Empresa_X.docx # documento original
-└── site/
-    ├── index.html
-    ├── css/styles.css
-    └── js/main.js
+└── Proposta_Comercial_Empresa_X.docx # documento original
 ```
+> Os arquivos do site foram movidos de `site/` para a **raiz** em 2026-07-09 para
+> o deploy no Netlify (que publica a raiz por padrão) funcionar sem 404.
+
+## Repositório
+- GitHub: https://github.com/manozx-seven/agencia-marketing (branch `main`).
+- Deploy: **Netlify** (publish = raiz). Auto-rebuild a cada `git push`.
 
 ## Como rodar
-Abrir `site/index.html` no navegador (duplo clique) ou servir a pasta `site/`
-com qualquer servidor estático.
+Abrir `index.html` na raiz (duplo clique) ou servir a pasta com qualquer
+servidor estático.

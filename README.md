@@ -12,10 +12,9 @@ o resumo pré-preenchido para o WhatsApp.
 
 ```
 agencia/
-├── site/
-│   ├── index.html
-│   ├── css/styles.css
-│   └── js/main.js
+├── index.html
+├── css/styles.css
+├── js/main.js
 ├── CONTEXTO.md                        # contexto do projeto
 ├── ATUALIZACOES.md                    # histórico de mudanças
 └── Proposta_Comercial_Empresa_X.docx  # documento original
@@ -23,13 +22,15 @@ agencia/
 
 ## Como rodar
 
-Abra `site/index.html` no navegador (duplo clique) ou sirva a pasta `site/`
-com qualquer servidor estático.
+Abra `index.html` no navegador (duplo clique) ou sirva a pasta com qualquer
+servidor estático.
 
-## Publicar com GitHub Pages
+## Publicar
 
-Em **Settings → Pages**, selecione a branch `main` e a pasta `/root`, depois
-acesse `.../site/`. Alternativamente, mova o conteúdo de `site/` para a raiz.
+O `index.html` está na **raiz**, então funciona direto em:
+
+- **Netlify** — publish directory = raiz (padrão). Basta conectar o repositório.
+- **GitHub Pages** — Settings → Pages → branch `main` / pasta `/root`.
 
 ## Contato
 

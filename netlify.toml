@@ -1,0 +1,5 @@
+# Deploy do site estático da Empresa X.
+# Site 100% estático (sem build): publica a raiz do repositório.
+[build]
+  publish = "."
+  command = ""
